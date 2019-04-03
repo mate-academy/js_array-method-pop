@@ -5,7 +5,7 @@ const applyCustomPop = require('./arrayMethodPop');
 applyCustomPop();
 
 test('`pop2` is added to [].__proto__', () => {
-    expect(typeof [].pop2).toBe('function');
+  expect(typeof [].pop2).toBe('function');
 });
 
 test('pop single item', () => {
