@@ -1,8 +1,8 @@
 {
-  "name": "array-method-lastindexof",
+  "name": "array-method-pop",
   "version": "1.0.0",
-  "description": "Custom implementation of Array.prototype.lastIndexOf()",
-  "main": "src/arrayMethodLastIndexOf.js",
+  "description": "Custom implementation of Array.prototype.pop()",
+  "main": "src/arrayMethodPop.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint **/*.js"
