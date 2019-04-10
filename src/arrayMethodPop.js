@@ -5,8 +5,8 @@
  *
  */
 function applyCustomPop() {
-  [].__proto__.pop2 = function() {
-    // write code here
+  [].__proto__.pop2 = function(...arg) {
+    return this.pop(...arg);
   };
 }
 
