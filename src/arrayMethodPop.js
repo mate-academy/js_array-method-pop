@@ -6,7 +6,8 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
+    const token = this.splice(this.length - 1, 1);
+    return token[0];
   };
 }
 
