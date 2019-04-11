@@ -5,17 +5,12 @@
  *
  */
 function applyCustomPop() {
-  [].__proto__.pop2 = function(...args) {
-    let result = this.splice(this.length - 1, 1);
-    if (result.length === 0) {
+  [].__proto__.pop2 = function() {
+    this.splice(this.length - 1, 1);
+    if (this.length === 0) {
       return undefined;
-    }
-    if (result.length !== 0) {
-      let number = 0;
-      result.forEach(function(i) {
-        number += i;
-      });
-      return number;
+    } else {
+      return this.length;
     }
   };
 }
