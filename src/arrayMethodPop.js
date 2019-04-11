@@ -6,8 +6,10 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    const token = this.splice(this.length - 1, 1);
-    return token[0];
+    if (this.length === 0) return undefined;
+    const deletedToken = this[this.length - 1];
+    this.length--;
+    return deletedToken;
   };
 }
 
