@@ -6,12 +6,12 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    let element = this.length === 0 ? false : this[this.length - 1];
-    if (!element) {
+    if (this.length === 0) {
       return undefined;
     }
+    const elem = this[this.length - 1];
     this.length--;
-    return element;
+    return elem;
   };
 }
 
