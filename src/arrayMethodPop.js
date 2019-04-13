@@ -10,7 +10,7 @@ function applyCustomPop() {
     if (this.length === 0) {
       return undefined;
     }
-    let remuvedItem = this[this.length - 1];
+    const remuvedItem = this[this.length - 1];
     this.length -= 1;
     return remuvedItem;
   };
