@@ -10,8 +10,6 @@ function applyCustomPop() {
       let last = this[this.length - 1];
       this.length--;
       return last;
-    } else {
-      return undefined;
     }
   };
 }
