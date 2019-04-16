@@ -10,9 +10,11 @@ function applyCustomPop() {
       return;
     }
 
-    this.splice(-1, 1);
+    const lastEl = this[this.length - 1];
 
-    return this.length;
+    this.length--;
+
+    return lastEl;
   };
 }
 
