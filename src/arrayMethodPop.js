@@ -5,8 +5,8 @@
  *
  */
 function applyCustomPop() {
-  let popElem;
   [].__proto__.pop2 = function() {
+    let popElem;
     if (!this.length) {
       return this[this.length];
     } else {
