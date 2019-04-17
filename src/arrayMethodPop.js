@@ -6,10 +6,10 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    let result = +this.splice([this.length - 1], 1);
+    let result = this.splice([this.length - 1], 1);
     if (result > 0) {
       return result;
-    } else return undefined;
+    }
   };
 }
 
