@@ -6,18 +6,13 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
-    return (this === []) ? this : this.splice(this.length - 1, 1)[0];
-    // or this...
-    /*
-    if (this === []) {
+    if (this.length === 0) {
       return this
     } else {
-      const element = this[this.length];
+      const element = this[this.length -1];
       this.length -= 1;
       return element;
     }
-    */
   };
 }
 
