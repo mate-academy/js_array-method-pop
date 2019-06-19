@@ -9,9 +9,13 @@ function applyCustomPop() {
       return;
     }
 
-    this.length = this.length - 1;
+    const lastItem = this[this.length - 1];
 
-    return this.length;
+    if (this.length >= 1) {
+      this.length--;
+    }
+
+    return lastItem;
   };
 }
 
