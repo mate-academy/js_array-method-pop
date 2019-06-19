@@ -13,9 +13,5 @@ function applyCustomPop() {
     return lastSymbol;
   };
 }
-applyCustomPop();
-const source = [1, 2, 3];
-const result = source.pop2();
-console.log(source.pop2());
-console.log(result);
+
 module.exports = applyCustomPop;
