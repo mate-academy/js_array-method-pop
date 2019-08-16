@@ -9,8 +9,8 @@ function applyCustomPop() {
       return undefined;
     }
 
-    this.length -= 1;
     const item = this[this.length - 1];
+    this.length -= 1;
 
     return item;
   };
