@@ -9,6 +9,11 @@ test('pop2 is added to [].__proto__', () => {
     .toBeInstanceOf(Function);
 });
 
+test(`pop2 doesn't call default pop`, () => {
+  expect([].pop2.toString().includes('.pop('))
+    .toBe(false);
+});
+
 test('pop single item', () => {
   const source = [0, 1, 2, 3];
   const result = source.pop2();
