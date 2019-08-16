@@ -11,7 +11,7 @@ function applyCustomPop() {
       return;
     }
     lastValueOfArray = this[this.length - 1];
-    this.length = this.length - 1;
+    this.length -= 1;
 
     return lastValueOfArray;
   };
