@@ -8,7 +8,9 @@ function applyCustomPop() {
     if (this.length < 1) {
       return undefined;
     } else {
-      return this.splice(this.length - 1, 1)[0];
+      const pop = this[this.length - 1];
+      this.length = this.length - 1;
+      return pop;
     }
   };
 }
