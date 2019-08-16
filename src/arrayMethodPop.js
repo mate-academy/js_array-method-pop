@@ -4,10 +4,10 @@
  * Implement method pop
  */
 function applyCustomPop() {
-  [].__proto__.pop2 = function(array) {
+  [].__proto__.pop2 = function() {
     // write code here
-    array.length = array.length - 1;
-    return array.length;
+    this.length = this.length - 1;
+    return this ? this : undefined;
   };
 }
 
