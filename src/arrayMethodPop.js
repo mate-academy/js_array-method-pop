@@ -5,15 +5,10 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    let count = 0;
-    // eslint-disable-next-line no-unused-vars
-    for (const item of this) {
-      count++;
-    }
+    const lastEl = this[this.length - 1];
 
-    const lastEl = this[count - 1];
-    if (count > 0) {
-      this.length = count - 1;
+    if (this.length > 0) {
+      this.length = this.length - 1;
     }
 
     return lastEl;
