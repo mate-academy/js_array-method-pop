@@ -8,9 +8,10 @@ function applyCustomPop() {
     if (!this.length) {
       return undefined;
     }
+    const lastElement = this[this.length - 1];
     this.length = this.length - 1;
 
-    return this.length;
+    return lastElement;
   };
 }
 
