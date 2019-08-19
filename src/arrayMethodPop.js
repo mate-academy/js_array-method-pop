@@ -5,12 +5,11 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    const arrayFunc = this;
-    const length = arrayFunc.length;
+    const length = this.length;
     if (length === 0) {
       return undefined;
     }
-    const element = arrayFunc[length - 1];
+    const element = this[length - 1];
     this.length -= 1;
     return element;
   };
