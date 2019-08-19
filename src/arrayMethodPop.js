@@ -8,7 +8,7 @@ function applyCustomPop() {
     // write code here
     if (this.length) {
       this.length = this.length - 1;
-      return this.length ? this.length : undefined;
+      return this ? this : undefined;
     }
   };
 }
