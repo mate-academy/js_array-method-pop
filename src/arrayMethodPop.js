@@ -7,11 +7,10 @@ function applyCustomPop() {
   [].__proto__.pop2 = function() {
     if (this.length === 0) {
       return undefined;
-    } else {
-      const lastElem = this[this.length - 1];
-      this.length--;
-      return lastElem;
     }
+    const lastElement = this[this.length - 1];
+    this.length--;
+    return lastElement;
   };
 }
 
