@@ -5,7 +5,13 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    return this.splice(-1, 1)[0];
+    const arrLength = this.length;
+    if (arrLength === 0) {
+      return undefined;
+    }
+    const lastItem = this[arrLength - 1];
+    this.length -= 1;
+    return lastItem;
   };
 }
 
