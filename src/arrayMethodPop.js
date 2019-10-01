@@ -10,7 +10,6 @@ function applyCustomPop() {
 
     if (len) {
       value = this[--len];
-      delete this[len];
     }
     this.length = len;
 
