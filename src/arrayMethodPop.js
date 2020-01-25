@@ -13,11 +13,4 @@ function applyCustomPop() {
   };
 }
 
-// applyCustomPop();
-
-// const a = [1, 2, 3, 4];
-
-// console.log(a.pop2());
-// console.log(a);
-
 module.exports = applyCustomPop;
