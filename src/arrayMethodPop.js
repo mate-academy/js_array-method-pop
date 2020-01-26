@@ -7,7 +7,11 @@ function applyCustomPop() {
   [].__proto__.pop2 = function() {
     const deleted = this[this.length - 1];
 
-    this.splice(this.length - 1, 1);
+    if (!this.length) {
+      return undefined;
+    }
+
+    this.length--;
 
     return deleted;
   };
