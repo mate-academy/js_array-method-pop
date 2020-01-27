@@ -4,8 +4,7 @@
  * Implement method pop
  */
 function applyCustomPop() {
-  // eslint-disable-next-line no-extend-native
-  Array.prototype.pop2 = function() {
+  [].__proto__.pop2 = function() {
     if (!this.length) {
       return undefined;
     }
