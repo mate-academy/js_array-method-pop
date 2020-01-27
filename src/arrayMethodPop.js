@@ -9,11 +9,11 @@ function applyCustomPop() {
       return undefined;
     }
 
-    const popItem = this[this.length - 1];
+    const poppedItem = this[this.length - 1];
 
     this.length -= 1;
 
-    return popItem;
+    return poppedItem;
   };
 }
 
