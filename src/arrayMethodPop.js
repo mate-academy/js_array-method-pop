@@ -5,15 +5,15 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    const popValue = this[this.length - 1];
-
-    if (this.length === 0) {
+    if (!this.length) {
       return undefined;
+    } else {
+      const lastValue = this[this.length - 1];
+
+      this.length--;
+
+      return lastValue;
     }
-
-    this.length--;
-
-    return popValue;
   };
 }
 
