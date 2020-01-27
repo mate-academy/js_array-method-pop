@@ -9,11 +9,9 @@ function applyCustomPop() {
 
     if (lastElement !== undefined) {
       this.length--;
-
-      return lastElement;
     }
 
-    return undefined;
+    return lastElement;
   };
 }
 
