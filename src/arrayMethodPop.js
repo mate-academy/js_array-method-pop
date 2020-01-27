@@ -7,9 +7,12 @@ function applyCustomPop() {
   [].__proto__.pop2 = function() {
     const lastElement = this[this.length - 1];
 
-    this.splice([this.length - 1], 1);
+    if (!this.length) {
+      return undefined;
+    }
+    this.length -= 1;
 
-    return this[this.length - 1] ? lastElement : undefined;
+    return lastElement;
   };
 }
 module.exports = applyCustomPop;
