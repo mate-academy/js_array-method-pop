@@ -10,7 +10,7 @@ function applyCustomPop() {
     if (this.length === 0) {
       return undefined;
     }
-    this.length = this.length - 1;
+    this.length -= 1;
 
     return lastElement;
   };
