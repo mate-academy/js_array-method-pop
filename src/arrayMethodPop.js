@@ -11,8 +11,6 @@ function applyCustomPop() {
       this.length -= 1;
 
       return item;
-    } else {
-      return undefined;
     }
   };
 }
