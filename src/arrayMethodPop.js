@@ -7,7 +7,7 @@ function applyCustomPop() {
   [].__proto__.pop2 = function() {
     const popedElement = this[this.length - 1];
 
-    if (popedElement) {
+    if (popedElement !== undefined) {
       this.length -= 1;
     }
 
