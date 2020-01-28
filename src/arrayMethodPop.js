@@ -5,7 +5,15 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
+    const poppedItem = this[this.length - 1];
+
+    if (!this.length) {
+      return undefined;
+    }
+
+    this.length = this.length - 1;
+
+    return poppedItem;
   };
 }
 
