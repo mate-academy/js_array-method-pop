@@ -8,8 +8,8 @@ function applyCustomPop() {
     // write code here
     const arrLength = this.length;
 
-    if (arrLength === 0) {
-      return undefined;
+    if (!arrLength) {
+      return;
     }
 
     const result = this[arrLength - 1];
