@@ -10,7 +10,6 @@ function applyCustomPop() {
     for (let i = 0; i < this.length; i++) {
       if (i === this.length - 1) {
         popItem = this[i];
-        delete this[i];
         this.length = this.length - 1;
       }
     }
