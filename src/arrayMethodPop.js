@@ -5,7 +5,11 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
+    const res = this.reverse().shift();
+
+    this.reverse();
+
+    return res;
   };
 }
 
