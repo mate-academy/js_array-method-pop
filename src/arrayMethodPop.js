@@ -6,9 +6,10 @@
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
     const items = this;
-    const lastElement = items[items.length - 1];
+    let lastElement;
 
     if (items.length !== 0) {
+      lastElement = items[items.length - 1];
       items.length = items.length - 1;
     }
 
