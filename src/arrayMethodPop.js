@@ -5,7 +5,13 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
+    if (this.lenth === 0) {
+      return undefined;
+    }
+
+    const a = this.splice(-1)[0];
+
+    return a;
   };
 }
 
