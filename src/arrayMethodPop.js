@@ -11,10 +11,11 @@ function applyCustomPop() {
     if (this.length === 0) {
       return undefined;
     } else {
-      popElement = this.splice(this.length - 1, 1);
+      popElement = this[this.length - 1];
+      this.length = this.length - 1;
     }
 
-    return popElement[0];
+    return popElement;
   };
 }
 
