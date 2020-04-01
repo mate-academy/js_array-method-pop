@@ -1,0 +1,406 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200401.173342.3536.0.001.json",
+    "dumpEventTime": "2020-04-01T17:33:43Z",
+    "dumpEventTimeStamp": "1585751623509",
+    "processId": 3536,
+    "threadId": null,
+    "cwd": "c:\\projects\\js_array-method-pop",
+    "commandLine": [
+      "C:\\PROGRAM FILES\\NODEJS\\node.exe",
+      "c:\\projects\\js_array-method-pop\\node_modules\\jest-worker\\build\\workers\\processChild.js"
+    ],
+    "nodejsVersion": "v13.9.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.9.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.9.0/node-v13.9.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.9.0/node-v13.9.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.9.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Home Premium Service Pack 1",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz",
+        "speed": 2394,
+        "user": 4280714,
+        "nice": 0,
+        "sys": 2267349,
+        "idle": 26173457,
+        "irq": 42089
+      },
+      {
+        "model": "Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz",
+        "speed": 2394,
+        "user": 2562566,
+        "nice": 0,
+        "sys": 1250691,
+        "idle": 28907562,
+        "irq": 146016
+      },
+      {
+        "model": "Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz",
+        "speed": 2394,
+        "user": 4429804,
+        "nice": 0,
+        "sys": 2333681,
+        "idle": 25957209,
+        "irq": 117593
+      },
+      {
+        "model": "Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz",
+        "speed": 2394,
+        "user": 1481401,
+        "nice": 0,
+        "sys": 783156,
+        "idle": 30456012,
+        "irq": 106470
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wireless Network Connection 2",
+        "internal": false,
+        "mac": "8c:a9:82:04:6b:26",
+        "address": "fe80::3924:300a:3748:9d2c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 21
+      },
+      {
+        "name": "Wireless Network Connection 2",
+        "internal": false,
+        "mac": "8c:a9:82:04:6b:26",
+        "address": "192.168.1.3",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Vasil-PC"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000013f232399",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11561"
+    },
+    {
+      "pc": "0x000000013f236849",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29145"
+    },
+    {
+      "pc": "0x000000013f2356c8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24664"
+    },
+    {
+      "pc": "0x000000013f35ab12",
+      "symbol": "v8::base::CPU::has_sse+60434"
+    },
+    {
+      "pc": "0x000000013fb8721e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x000000013fb6e971",
+      "symbol": "v8::SharedArrayBuffer::Externalize+785"
+    },
+    {
+      "pc": "0x000000013fa359cc",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468"
+    },
+    {
+      "pc": "0x000000013fa5388c",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+60"
+    },
+    {
+      "pc": "0x000000013fa5f080",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray+64"
+    },
+    {
+      "pc": "0x000000013f92d00c",
+      "symbol": "v8::debug::Script::GetIsolate+7628"
+    },
+    {
+      "pc": "0x000000013f7d50ba",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+163002"
+    },
+    {
+      "pc": "0x000000013ffd0b6d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+517453"
+    },
+    {
+      "pc": "0x000002c97268435f",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1749590016,
+    "totalCommittedMemory": 1749590016,
+    "usedMemory": 1713622744,
+    "availableMemory": 288087496,
+    "memoryLimit": 2020868096,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      },
+      "old_space": {
+        "memorySize": 33959936,
+        "committedMemory": 33959936,
+        "capacity": 32681312,
+        "used": 32630840,
+        "available": 50472
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 692224,
+        "capacity": 328416,
+        "used": 328256,
+        "available": 160
+      },
+      "map_space": {
+        "memorySize": 1839104,
+        "committedMemory": 1839104,
+        "capacity": 1414160,
+        "used": 1414160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 672718848,
+        "committedMemory": 672718848,
+        "capacity": 672703440,
+        "used": 672703440,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2880,
+        "used": 2880,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 1006514176,
+        "committedMemory": 1006514176,
+        "capacity": 1006510128,
+        "used": 1006510128,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 11.778,
+    "kernelCpuSeconds": 3.213,
+    "cpuConsumptionPercent": 7.89,
+    "maxRss": 1751339008,
+    "pageFaults": {
+      "IORequired": 869864,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2683,
+      "writes": 7
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "ACLOCAL_PATH": "C:\\Program Files\\Git\\mingw64\\share\\aclocal;C:\\Program Files\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "APPDATA": "C:\\Users\\Vasil\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "CI": "true",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "VASIL-PC",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "C:/Program Files/Git/mingw64/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "dp0": "c:\\projects\\js_array-method-pop\\node_modules\\.bin\\",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "EXEPATH": "C:\\Program Files\\Git",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOME": "C:\\Users\\Vasil",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Vasil",
+    "HOSTNAME": "Vasil-PC",
+    "INFOPATH": "C:\\Program Files\\Git\\usr\\local\\info;C:\\Program Files\\Git\\usr\\share\\info;C:\\Program Files\\Git\\usr\\info;C:\\Program Files\\Git\\share\\info",
+    "JEST_WORKER_ID": "1",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Vasil\\AppData\\Local",
+    "LOGONSERVER": "\\\\VASIL-PC",
+    "MANPATH": "C:\\Program Files\\Git\\mingw64\\local\\man;C:\\Program Files\\Git\\mingw64\\share\\man;C:\\Program Files\\Git\\usr\\local\\man;C:\\Program Files\\Git\\usr\\share\\man;C:\\Program Files\\Git\\usr\\man;C:\\Program Files\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "C:/Program Files/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "C:/Program Files/Git/mingw64",
+    "NODE_ENV": "test",
+    "NUMBER_OF_PROCESSORS": "4",
+    "ORIGINAL_PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Vasil\\bin;C:\\PROGRAM FILES (X86)\\COMMON FILES\\ORACLE\\JAVA\\JAVAPATH;C:\\PROGRAMDATA\\ORACLE\\JAVA\\JAVAPATH;C:\\Windows\\SYSTEM32;C:\\Windows;C:\\Windows\\SYSTEM32\\WBEM;C:\\Windows\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0;C:\\PROGRAM FILES\\INTEL\\WIFI\\BIN;C:\\PROGRAM FILES\\COMMON FILES\\INTEL\\WIRELESSCOMMON;C:\\PROGRAM FILES\\GIT\\CMD;C:\\PROGRAM FILES\\NODEJS;C:\\Users\\Vasil\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Vasil\\AppData\\Roaming\\npm",
+    "ORIGINAL_TEMP": "C:/Users/Vasil/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/Vasil/AppData/Local/Temp",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\Vasil\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Vasil\\bin;C:\\PROGRAM FILES (X86)\\COMMON FILES\\ORACLE\\JAVA\\JAVAPATH;C:\\PROGRAMDATA\\ORACLE\\JAVA\\JAVAPATH;C:\\Windows\\SYSTEM32;C:\\Windows;C:\\Windows\\SYSTEM32\\WBEM;C:\\Windows\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0;C:\\PROGRAM FILES\\INTEL\\WIFI\\BIN;C:\\PROGRAM FILES\\COMMON FILES\\INTEL\\WIRELESSCOMMON;C:\\PROGRAM FILES\\GIT\\CMD;C:\\PROGRAM FILES\\NODEJS;C:\\Users\\Vasil\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Vasil\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PIPE_LOGGING": "true",
+    "PKG_CONFIG_PATH": "C:\\Program Files\\Git\\mingw64\\lib\\pkgconfig;C:\\Program Files\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 37 Stepping 5, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2505",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "C:/projects/js_array-method-pop",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "2",
+    "SNF": "C:\\ProgramData\\Snorlers\\snp.sc",
+    "SNP": "https://%66%65%65%64.%68%65%6C%70%65%72%62%61%72.%63%6F%6D?publisher=APSFFreeSS&co=UA&userid=7d57f0de-f9d9-006a-3eaf-110327655c19&searchtype=sc&installDate=04/10/2019&barcodeid=53724003&channelid=3&av=windows",
+    "SSH_ASKPASS": "C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\Vasil\\AppData\\Local\\Temp",
+    "TERM": "xterm",
+    "TMP": "C:\\Users\\Vasil\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\Vasil\\AppData\\Local\\Temp",
+    "USERDOMAIN": "Vasil-PC",
+    "USERNAME": "Vasil",
+    "USERPROFILE": "C:\\Users\\Vasil",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_CLI": "1",
+    "VSCODE_CWD": "C:\\projects\\js_array-method-pop",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\80aa85514f5ca40c9bce66c139ca394b-1.43.2-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-1d91a813-c7e9-41e9-bd2f-77a8f4544839-sock",
+    "VSCODE_LOGS": "C:\\Users\\Vasil\\AppData\\Roaming\\Code\\logs\\20200401T172224",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\Vasil\\AppData\\Roaming\\Code\\CachedData\\0ba0ca52957102ca3527cf479571617f0de6ed50",
+    "VSCODE_PID": "740",
+    "WINDIR": "C:\\Windows",
+    "_": "C:/Users/Vasil/AppData/Local/Programs/Microsoft VS Code/Code.exe",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\PROGRAM FILES\\NODEJS\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\system32\\kernel32.dll",
+    "C:\\Windows\\system32\\KERNELBASE.dll",
+    "C:\\Windows\\system32\\dbghelp.dll",
+    "C:\\Windows\\system32\\msvcrt.dll",
+    "C:\\Windows\\system32\\WS2_32.dll",
+    "C:\\Windows\\system32\\RPCRT4.dll",
+    "C:\\Windows\\system32\\NSI.dll",
+    "C:\\Windows\\system32\\IPHLPAPI.DLL",
+    "C:\\Windows\\system32\\WINNSI.DLL",
+    "C:\\Windows\\system32\\PSAPI.DLL",
+    "C:\\Windows\\system32\\USERENV.dll",
+    "C:\\Windows\\system32\\profapi.dll",
+    "C:\\Windows\\system32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\sechost.dll",
+    "C:\\Windows\\system32\\USER32.dll",
+    "C:\\Windows\\system32\\GDI32.dll",
+    "C:\\Windows\\system32\\LPK.dll",
+    "C:\\Windows\\system32\\USP10.dll",
+    "C:\\Windows\\system32\\CRYPT32.dll",
+    "C:\\Windows\\system32\\MSASN1.dll",
+    "C:\\Windows\\system32\\bcrypt.dll",
+    "C:\\Windows\\system32\\WINMM.dll",
+    "C:\\Windows\\system32\\IMM32.DLL",
+    "C:\\Windows\\system32\\MSCTF.dll",
+    "C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "C:\\Windows\\system32\\powrprof.dll",
+    "C:\\Windows\\system32\\SETUPAPI.dll",
+    "C:\\Windows\\system32\\CFGMGR32.dll",
+    "C:\\Windows\\system32\\OLEAUT32.dll",
+    "C:\\Windows\\system32\\ole32.dll",
+    "C:\\Windows\\system32\\DEVOBJ.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\wshtcpip.dll",
+    "C:\\Windows\\System32\\wship6.dll",
+    "C:\\Windows\\system32\\bcryptprimitives.dll",
+    "C:\\Windows\\system32\\apphelp.dll",
+    "C:\\Windows\\system32\\dhcpcsvc.DLL",
+    "C:\\Windows\\system32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\wshbth.dll",
+    "C:\\Windows\\system32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll"
+  ]
+}
