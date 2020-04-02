@@ -12,7 +12,7 @@ function applyCustomPop() {
       return;
     }
 
-    const last = JSON.parse(JSON.stringify(arr[arr.length - 1]));
+    const last = arr[arr.length - 1];
 
     arr.length--;
 
