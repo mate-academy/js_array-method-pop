@@ -5,7 +5,11 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
+    const deletedProperty = this[this.length - 1];
+
+    this.length = this.length === 0 ? 0 : this.length - 1;
+
+    return deletedProperty;
   };
 }
 
