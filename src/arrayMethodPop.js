@@ -9,7 +9,7 @@ function applyCustomPop() {
 
     if (this.length > 0) {
       lastElement = this[this.length - 1];
-      this.length = this.length - 1;
+      this.length -= 1;
     }
 
     return lastElement;
