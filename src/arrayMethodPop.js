@@ -10,11 +10,11 @@ function applyCustomPop() {
       return undefined;
     }
 
-    const deleted = this[this.length - 1];
+    const deletedElement = this[this.length - 1];
 
     this.length = this.length - 1;
 
-    return deleted;
+    return deletedElement;
   };
 }
 
