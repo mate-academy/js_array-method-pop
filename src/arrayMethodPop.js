@@ -1,18 +1,19 @@
 'use strict';
-/* eslint-disable */
+
 /**
  * Implement method pop
  */
 
-
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    if(this.length === 0) {
+    if (this.length === 0) {
       return undefined;
     }
 
-    let deleted = this[this.length-1];
-    this.length = this.length-1;
+    const deleted = this[this.length - 1];
+
+    this.length = this.length - 1;
+
     return deleted;
   };
 }
