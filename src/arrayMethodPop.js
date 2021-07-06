@@ -5,7 +5,13 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
+    const deleteElem = this[this.length - 1];
+    if (this.length < 1) {
+      return undefined;
+    } else {
+      this.length--;
+      return deleteElem;
+    }
   };
 }
 
