@@ -5,7 +5,11 @@
  */
 function applyCustomPop() {
   [].__proto__.pop2 = function() {
-    // write code here
+    const removeLastItem = this[this.length - 1];
+    if (removeLastItem) {
+      this.length -= 1;
+    }
+    return removeLastItem;
   };
 }
 
