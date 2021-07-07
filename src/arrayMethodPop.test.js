@@ -19,6 +19,7 @@ test('pop single item', () => {
   const result = source.pop2();
 
   expect(source)
+
     .toEqual([5, 6, 7]);
 
   expect(result)
@@ -27,6 +28,7 @@ test('pop single item', () => {
 
 test('pop from empty array', () => {
   const source = [];
+
   const result = source.pop2();
 
   expect(source)
@@ -38,9 +40,11 @@ test('pop from empty array', () => {
 
 test('pop ignores arguments', () => {
   const source = [7, 6, 5, 1];
+
   const result = source.pop2(2);
 
   expect(source)
+
     .toEqual([7, 6, 5]);
 
   expect(result)
