@@ -33,6 +33,7 @@ test('pop from empty array', () => {
     .toEqual([]);
 
   expect(result)
+
     .toBe(undefined);
 });
 
