@@ -1,4 +1,7 @@
 {
+  "jest": {
+  "testEnvironment": "node"
+  },
   "name": "array-method-pop",
   "version": "1.0.0",
   "description": "Custom implementation of Array.prototype.pop()",
